@@ -1,0 +1,127 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tkpraktikum.fragments.ItemOneFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/search_box"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginStart="40dp"
+            android:hint="Search"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/searchList"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="150dp"
+            android:text="List" />
+
+        <Button
+            android:id="@+id/searchMap"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="Map" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/breakfastradio"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="270dp"
+            android:text="Breakfast" />
+
+        <RadioButton
+            android:id="@+id/lunchradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_below="@+id/breakfastradio"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="2dp"
+            android:text="Lunch"/>
+
+
+        <RadioButton
+            android:id="@+id/dinnerradio"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="2dp"
+            android:text="Dinner" />
+
+
+        <RadioButton
+            android:id="@+id/coffeetea"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="2dp"
+            android:text="Coffee" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/listRadio"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="400dp"
+            android:text="List" />
+
+        <Button
+            android:id="@+id/MapRadio"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="400dp"
+            android:text="Map" />
+
+    </LinearLayout>
+
+</RelativeLayout>
